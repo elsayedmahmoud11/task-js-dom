@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lab/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- start traffic light section  -->
+            <div class="col-md-10 m-auto">
+                <div class="text-center">
+                    <h2 id="traffic">Traffic light</h2>
+                    <button id="green" class="btn btn-success m-1" data-colorr="green">Green</button>
+                    <button id="yellow" class="btn btn-warning m-1" data-colorr="yellow">Yellow</button>
+                    <button id="red" class="btn btn-danger m-1" data-colorr="red">Red</button>
+                </div>   
+                <!-- end traffic light section  --> 
+                 <br>
+                 <hr>
+                 <br>
+                <!-- start list section  -->
+                 <div class="col-md-10 m-auto">
+                     <form onsubmit="return listData()">
+                        <h3 class="text-center mb-2">To Do List</h3>
+                        <input type="text" name="task" id="task" class="form-control mb-2" placeholder="Enter Your Task">
+                        <input type="submit" value="Enter" class="form-control btn btn-success"> 
+                    </form>
+                    <ol id="result">
+                    </ol>
+                 </div>
+                <!-- end list section  -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
